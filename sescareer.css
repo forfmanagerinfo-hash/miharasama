@@ -33,7 +33,7 @@ img {
 }
 
 .section-title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: calc(100vw * 32 / 1440);
   line-height: 1.5;
   letter-spacing: 0.15em;
@@ -58,12 +58,11 @@ img {
 }
 
 .section-kicker {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-weight: 900;
   font-size: calc(100vw * 15 / 1440);
   line-height: calc(100vw * 18 / 1440);
   text-align: center;
-  letter-spacing: 0.04em;
 }
 
 .section-kicker--light {
@@ -124,7 +123,7 @@ img {
   left: calc(100vw * 120 / 1440);
   top: calc(100vw * 50 / 1440);
   width: calc(100vw * 233 / 1440);
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-weight: 900;
   font-size: calc(100vw * 25 / 1440);
   line-height: calc(100vw * 30 / 1440);
@@ -140,7 +139,7 @@ img {
   width: 100%;
   padding: 0 calc(100vw * 12 / 1440);
   box-sizing: border-box;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-weight: 400;
   font-size: calc(100vw * 30 / 1440);
   line-height: calc(100vw * 36 / 1440);
@@ -191,10 +190,10 @@ img {
   left: calc(100vw * 117 / 1440);
   top: calc(100vw * 474 / 1440);
   width: calc(100vw * 530 / 1440);
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-weight: 400;
   font-size: calc(100vw * 20 / 1440);
-  line-height: 150%;
+  line-height: 1.5;
   color: #ffffff;
   text-shadow: calc(100vw * 4 / 1440) calc(100vw * 4 / 1440) calc(100vw * 4 / 1440) rgba(0, 0, 0, 0.25);
   z-index: 3;
@@ -214,7 +213,7 @@ img {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   font-size: calc(100vw * 23 / 1440);
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.15em;
   color: #000000;
   z-index: 3;
@@ -255,7 +254,7 @@ img {
 }
 
 .worries-title-text {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: calc(100vw * 32 / 1440);
   line-height: calc(100vw * 48 / 1440);
   letter-spacing: 0.15em;
@@ -264,15 +263,19 @@ img {
 
 .worries-title-em {
   display: inline-block;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: calc(100vw * 42 / 1440);
   line-height: calc(100vw * 63 / 1440);
   letter-spacing: 0.15em;
   font-weight: 700;
 }
 
+.worries-title-em--first {
+  transform: translateY(calc(100vw * -9 / 1440));
+}
+
 .worries-title-em--middle {
-  transform: translateY(-calc(100vw * 6 / 1440));
+  transform: translateY(0);
 }
 
 .worries-title-em--last {
@@ -328,7 +331,6 @@ img {
 }
 
 .worries-footer {
-  /* margin-top: calc(100vw * 8 / 1440); */
   padding-bottom: 0;
   text-align: center;
 }
@@ -343,7 +345,7 @@ img {
   background: #FFFFFF;
   font-family: "Noto Sans JP", sans-serif;
   font-size: calc(100vw * 32 / 1440);
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.15em;
   font-weight: 700;
 }
@@ -367,6 +369,7 @@ img {
 .cta-container {
   width: 100%;
   height: calc(100vw * 458 / 1440);
+  margin-top: calc(100vw * 35 / 1440);
 }
 
 .cta-wrapper {
@@ -409,7 +412,7 @@ img {
   color: #ffffff;
   font-family: "Noto Sans JP", sans-serif;
   font-size: calc(100vw * 18 / 1440);
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.1em;
   font-weight: 700;
   transform: rotate(-14.26deg);
@@ -422,9 +425,9 @@ img {
   z-index: 1;
   margin: 0;
   padding: 0;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: calc(100vw * 20 / 1440);
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.1em;
   font-weight: 700;
 }
@@ -436,9 +439,9 @@ img {
   z-index: 1;
   margin: 0;
   padding: 0;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: calc(100vw * 35 / 1440);
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.1em;
   font-weight: 700;
 }
@@ -498,6 +501,12 @@ img {
   overflow: hidden;
   background: linear-gradient(90deg, #e88d69 0%, #e25311 100%);
   box-shadow: 0 calc(100vw * 4 / 1440) calc(100vw * 4 / 1440) rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 calc(100vw * 8 / 1440) calc(100vw * 8 / 1440) rgba(0, 0, 0, 0.25);
 }
 
 .cta-card::before {
@@ -520,7 +529,6 @@ img {
   height: 100%;
   object-fit: cover;
   opacity: 0.9;
-  /* mix-blend-mode: normal; */
   z-index: 0;
 }
 
@@ -539,7 +547,7 @@ img {
   top: calc(100vw * 81 / 1440);
   font-family: "Noto Sans JP", sans-serif;
   font-size: calc(100vw * 20 / 1440);
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.1em;
   font-weight: 700;
   z-index: 2;
@@ -554,7 +562,7 @@ img {
   max-width: calc(100vw * 366 / 1440);
   font-family: "Noto Sans JP", sans-serif;
   font-size: calc(100vw * 35 / 1440);
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.1em;
   font-weight: 700;
   z-index: 2;
@@ -591,7 +599,7 @@ img {
    ========================================================= */
 .reason-container {
   width: 100%;
-  padding-bottom: calc(100vw * 40 / 1440);
+  padding-bottom: calc(100vw * 35 / 1440);
 }
 
 .reason-wrapper {
@@ -603,7 +611,7 @@ img {
 
 .reason-content {
   position: relative;
-  padding-top: calc(100vw * 37 / 1440);
+  padding-top: calc(100vw * 35 / 1440);
   padding-left: calc(100vw * 120 / 1440);
   padding-right: calc(100vw * 120 / 1440);
 }
@@ -720,7 +728,7 @@ img {
 .advisor-content {
   position: relative;
   z-index: 3;
-  padding-top: calc(100vw * 81 / 1440);
+  padding-top: calc(100vw * 79 / 1440);
   padding-left: calc(100vw * 120 / 1440);
   padding-right: calc(100vw * 120 / 1440);
 }
@@ -729,7 +737,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: calc(100vw * 32 / 1440);
   line-height: calc(100vw * 48 / 1440);
   letter-spacing: 0.15em;
@@ -793,7 +801,6 @@ img {
    ========================================================= */
 .voice-container {
   width: 100%;
-  padding-bottom: calc(100vw * 100 / 1440);
   background: #ffffff;
 }
 
@@ -805,7 +812,7 @@ img {
 }
 
 .voice-content {
-  padding-top: calc(100vw * 26 / 1440);
+  padding-top: calc(100vw * 35 / 1440);
   padding-left: calc(100vw * 120 / 1440);
   padding-right: calc(100vw * 120 / 1440);
 }
@@ -843,7 +850,7 @@ img {
 }
 
 .voice-box h3 {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   color: #d0600c;
   font-size: calc(100vw * 20 / 1440);
   line-height: 1.5;
@@ -923,13 +930,13 @@ img {
 }
 
 .service-content {
-  padding-top: calc(100vw * 26 / 1440);
+  padding-top: calc(100vw * 35 / 1440);
   padding-left: calc(100vw * 120 / 1440);
   padding-right: calc(100vw * 120 / 1440);
 }
 
 .service-content .section-title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   margin-top: calc(100vw * 4 / 1440);
 }
 
@@ -991,7 +998,7 @@ img {
 }
 
 .service-item-text h3 {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: calc(100vw * 23 / 1440);
   line-height: 1.5;
   font-weight: 700;
@@ -1001,13 +1008,6 @@ img {
   margin-top: calc(100vw * 15 / 1440);
   font-size: calc(100vw * 16 / 1440);
   line-height: calc(100vw * 30 / 1440);
-}
-
-/* =========================================================
-   CTA secondary
-   ========================================================= */
-.cta-container--secondary {
-  margin-top: calc(100vw * 35 / 1440);
 }
 
 /* =========================================================
@@ -1026,7 +1026,7 @@ img {
 }
 
 .profile-content {
-  padding-top: calc(100vw * 26 / 1440);
+  padding-top: calc(100vw * 35 / 1440);
   padding-left: calc(100vw * 120 / 1440);
   padding-right: calc(100vw * 120 / 1440);
 }
@@ -1060,7 +1060,7 @@ img {
 }
 
 .profile-en {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: calc(100vw * 13 / 1440);
   line-height: 1.5;
   letter-spacing: 0.25em;
@@ -1098,15 +1098,15 @@ img {
 }
 
 .profile-catch {
-  margin-top: calc(100vw * 58 / 1440);
-  font-family: "Noto Serif JP", serif;
+  margin-top: calc(100vw * 63 / 1440);
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: calc(100vw * 28 / 1440);
   line-height: 1.5;
   letter-spacing: 0.1em;
   text-align: center;
   color: #d0600c;
   font-weight: 900;
-  margin-bottom: calc(100vw * 40 / 1440);
+  margin-bottom: calc(100vw * 54 / 1440);
 }
 
 /* =========================================================
@@ -1128,13 +1128,13 @@ img {
 }
 
 .qa-content {
-  padding-top: calc(100vw * 56 / 1440);
+  padding-top: calc(100vw * 35 / 1440);
   padding-left: calc(100vw * 120 / 1440);
   padding-right: calc(100vw * 120 / 1440);
 }
 
 .qa-content .section-title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-weight: 900;
   margin-top: calc(100vw * 4 / 1440);
 }
@@ -1159,10 +1159,11 @@ img {
   padding: 0 calc(100vw * 15 / 1440) 0 calc(100vw * 28 / 1440);
   background: #000000;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .qa-question span {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: calc(100vw * 25 / 1440);
   line-height: 1;
   letter-spacing: 0.15em;
@@ -1172,7 +1173,7 @@ img {
 
 .qa-question p {
   margin-left: calc(100vw * 21 / 1440);
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   font-size: calc(100vw * 20 / 1440);
   line-height: 1.5;
   letter-spacing: 0.15em;
@@ -1195,16 +1196,26 @@ img {
   line-height: 1;
   transform: rotate(-90deg);
   padding: 0 calc(100vw * 2 / 1440) calc(100vw * 8 / 1440) 0;
+  transition: transform 0.3s ease;
+  user-select: none; 
+}
+
+.qa-item.is-open .qa-question i {
+  transform: rotate(90deg);
 }
 
 .qa-answer {
-  padding: calc(100vw * 13 / 1440) 0 0 calc(100vw * 15 / 1440);
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
 }
 
 .qa-answer p {
+  padding: calc(100vw * 13 / 1440) 0 calc(100vw * 13 / 1440) calc(100vw * 15 / 1440);
   font-size: calc(100vw * 18 / 1440);
   line-height: calc(100vw * 27 / 1440);
   width: calc(100vw * 535 / 1440);
+  box-sizing: border-box;
 }
 
 /* =========================================================
@@ -1235,7 +1246,7 @@ img {
 .bottom-copy {
   position: absolute;
   left: calc(100vw * 120 / 1440);
-  top: calc(100vw * 135 / 1440);
+  top: calc(100vw * 159 / 1440);
   z-index: 2;
 }
 
@@ -1247,7 +1258,6 @@ img {
   font-weight: 700;
   transform: matrix(1, 0, -0.26, 0.97, 0, 0);
   width: calc(100vw * 483 / 1440);
-  /* margin-left: calc(100vw * -12 / 1440); */
 }
 
 .bottom-copy-large {
@@ -1257,7 +1267,7 @@ img {
 .bottom-copy p {
   margin-top: calc(100vw * 44.12 / 1440);
   font-size: calc(100vw * 18 / 1440);
-  line-height: 150%;
+  line-height: 1.5;
   width: calc(100vw * 519 / 1440);
   margin-left: calc(100vw * -14 / 1440);
 }
@@ -1294,7 +1304,7 @@ img {
   position: relative;
   width: calc(100vw * 1440 / 1440);
   max-width: 100%;
-  margin: calc(100vw * 34 / 1440) auto 0;
+  margin: calc(100vw * 60 / 1440) auto 0;
   height: calc(100vw * 354 / 1440);
   box-sizing: border-box;
 }
@@ -1324,6 +1334,7 @@ img {
 .bottom-copy-right {
   margin-top: calc(100vw * 92 / 1440);
   padding-right: calc(100vw * 80 / 1440);
+  padding-bottom: calc(100vw * 40 / 1440);
   text-align: right;
   font-size: calc(100vw * 10 / 1440);
   line-height: calc(100vw * 12 / 1440);
