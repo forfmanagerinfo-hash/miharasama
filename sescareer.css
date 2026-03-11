@@ -217,6 +217,12 @@ img {
   letter-spacing: 0.15em;
   color: #000000;
   z-index: 3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fv-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 calc(100vw * 8 / 1440) calc(100vw * 8 / 1440) rgba(0, 0, 0, 0.25);
 }
 
 /* =========================================================
@@ -225,6 +231,7 @@ img {
 .worries-container {
   position: relative;
   width: 100%;
+  margin-top: calc(100vw * 25 / 1440);
   padding-bottom: calc(100vw * 40 / 1440);
   background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),
               url("./worries/sescareer_imgworries-bg.png") center center / cover no-repeat;
@@ -499,7 +506,7 @@ img {
   width: calc(100vw * 630 / 1440);
   height: calc(100vw * 250 / 1440);
   overflow: hidden;
-  background: linear-gradient(90deg, #e88d69 0%, #e25311 100%);
+  background: linear-gradient(90deg, #E89869 0%, #D0600C 100%);
   box-shadow: 0 calc(100vw * 4 / 1440) calc(100vw * 4 / 1440) rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -509,18 +516,6 @@ img {
   box-shadow: 0 calc(100vw * 8 / 1440) calc(100vw * 8 / 1440) rgba(0, 0, 0, 0.25);
 }
 
-.cta-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, transparent 50%);
-  z-index: 1;
-  pointer-events: none;
-}
-
 .cta-card-stripe {
   position: absolute;
   left: 0;
@@ -528,7 +523,6 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.9;
   z-index: 0;
 }
 
@@ -538,6 +532,22 @@ img {
   top: calc(100vw * 67 / 1440);
   width: calc(100vw * 72 / 1440);
   height: calc(100vw * 115 / 1440);
+  z-index: 2;
+}
+
+.cta-card-dots {
+  position: absolute;
+  left: calc(100vw * 150 / 1440);
+  top: calc(100vw * 72 / 1440);
+  width: calc(100vw * 64 / 1440);
+  height: calc(100vw * 14 / 1440);
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: calc(100vw * 20 / 1440);
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  color: #000000;
   z-index: 2;
 }
 
@@ -551,8 +561,6 @@ img {
   letter-spacing: 0.1em;
   font-weight: 700;
   z-index: 2;
-  text-emphasis: filled dot #000000;
-  -webkit-text-emphasis: filled dot #000000;
 }
 
 .cta-card-title {
@@ -825,7 +833,7 @@ img {
 .voice-grid {
   position: relative;
   width: calc(100vw * 1121 / 1440);
-  height: calc(100vw * 1080 / 1440);
+  height: calc(100vw * 1012 / 1440);
   margin: calc(100vw * 63 / 1440) auto 0;
 }
 
@@ -919,7 +927,6 @@ img {
    ========================================================= */
 .service-container {
   width: 100%;
-  padding-bottom: calc(100vw * 50 / 1440);
 }
 
 .service-wrapper {
@@ -1015,7 +1022,6 @@ img {
    ========================================================= */
 .profile-container {
   width: 100%;
-  padding-bottom: calc(100vw * 50 / 1440);
 }
 
 .profile-wrapper {
@@ -1114,9 +1120,8 @@ img {
    ========================================================= */
 .qa-container {
   width: 100%;
-  padding-bottom: calc(100vw * 50 / 1440);
+  padding-bottom: calc(100vw * 67 / 1440);
   background: 
-    url("./common/sescareer_imgsection-curve.png") no-repeat left top / 100% auto,
     url("./qa/sescareer_imgqa-bg.png") center center / cover no-repeat;
 }
 
@@ -1141,7 +1146,7 @@ img {
 
 .qa-list {
   width: calc(100vw * 1202 / 1440);
-  margin: calc(100vw * 64 / 1440) auto 0;
+  margin-top: calc(100vw * 64 / 1440);
   display: grid;
   grid-template-columns: repeat(2, calc(100vw * 550 / 1440));
   column-gap: calc(100vw * 102 / 1440);
@@ -1160,6 +1165,7 @@ img {
   background: #000000;
   color: #ffffff;
   cursor: pointer;
+  user-select: none;
 }
 
 .qa-question span {
@@ -1190,18 +1196,19 @@ img {
   width: calc(100vw * 40 / 1440);
   height: calc(100vw * 40 / 1440);
   background: #ffffff;
-  color: #000000;
-  font-style: normal;
-  font-size: calc(100vw * 28 / 1440);
-  line-height: 1;
-  transform: rotate(-90deg);
-  padding: 0 calc(100vw * 2 / 1440) calc(100vw * 8 / 1440) 0;
-  transition: transform 0.3s ease;
-  user-select: none; 
+  padding: 0;
 }
 
-.qa-item.is-open .qa-question i {
+.qa-arrow {
+  width: auto;
+  height: calc(100vw * 12 / 1440);
+  object-fit: contain;
   transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.qa-item.is-open .qa-arrow {
+  transform: rotate(-90deg);
 }
 
 .qa-answer {
@@ -1304,7 +1311,7 @@ img {
   position: relative;
   width: calc(100vw * 1440 / 1440);
   max-width: 100%;
-  margin: calc(100vw * 60 / 1440) auto 0;
+  margin: calc(100vw * 20 / 1440) auto 0;
   height: calc(100vw * 354 / 1440);
   box-sizing: border-box;
 }
