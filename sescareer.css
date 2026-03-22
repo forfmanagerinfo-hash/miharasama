@@ -170,6 +170,10 @@ img {
   z-index: 3;
 }
 
+.fv-heading-small {
+  font-size: calc(100vw * 50 / 1440);
+}
+
 .fv-heading-line02 {
   position: absolute;
   left: calc(100vw * 178 / 1440);
@@ -183,6 +187,10 @@ img {
   text-shadow: calc(100vw * 4 / 1440) calc(100vw * 4 / 1440) calc(100vw * 4 / 1440) rgba(0, 0, 0, 0.25);
   transform: matrix(1, 0, -0.26, 0.97, 0, 0);
   z-index: 3;
+}
+
+.fv-heading-large {
+  font-size: calc(100vw * 65 / 1440);
 }
 
 .fv-description {
@@ -1345,4 +1353,1065 @@ img {
   text-align: right;
   font-size: calc(100vw * 10 / 1440);
   line-height: calc(100vw * 12 / 1440);
+}
+
+/* =========================================================
+   PC/SP 改行切り替え
+   ========================================================= */
+.sp-br {
+  display: none;
+}
+
+.pc-br {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .sp-br {
+    display: block;
+  }
+
+  .pc-br {
+    display: none;
+  }
+}
+
+/* =========================================================
+   SP
+   ========================================================= */
+@media (max-width: 768px) {
+
+  body {
+    font-size: calc(100vw * 14 / 375);
+  }
+
+  /* ---------- common ---------- */
+  .section-title {
+    font-size: calc(100vw * 22 / 375);
+  }
+
+  .section-subtitle {
+    margin-top: calc(100vw * 8 / 375);
+    font-size: calc(100vw * 12 / 375);
+    line-height: calc(100vw * 18 / 375);
+  }
+
+  .section-kicker {
+    font-size: calc(100vw * 10 / 375);
+    line-height: calc(100vw * 12 / 375);
+  }
+
+  /* ---------- FV — 375 x 550 ---------- */
+  .fv-container {
+    height: calc(100vw * 550 / 375);
+    overflow: hidden;
+  }
+
+  .fv-bg {
+    top: calc(100vw * 64 / 375);
+    left: calc(100vw * -119 / 375);
+    width: calc(100vw * 1141 / 375);
+    height: calc(100vw * 437 / 375);
+    filter: drop-shadow(0 calc(100vw * 4 / 375) calc(100vw * 4 / 375) rgba(0, 0, 0, 0.25));
+  }
+
+  .fv-white-bar {
+    top: calc(100vw * 160 / 375);
+    height: calc(100vw * 30 / 375);
+  }
+
+  .fv-badge-bar {
+    left: calc(100vw * 18 / 375);
+    top: calc(100vw * 44 / 375);
+    width: calc(100vw * 225 / 375);
+    height: calc(100vw * 40 / 375);
+  }
+
+  .fv-label {
+    left: calc(100vw * 18 / 375);
+    top: calc(100vw * 15 / 375);
+    font-size: calc(100vw * 18 / 375);
+    line-height: 1.5;
+    font-weight: 900;
+    white-space: nowrap;
+  }
+
+  .fv-sub-label {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: calc(100vw * 20 / 375);
+    font-style: italic;
+    line-height: 1.5;
+    padding: 0;
+    letter-spacing: 0.05em;
+  }
+
+  .fv-heading-line01 {
+    left: calc(100vw * 28 / 375);
+    top: calc(100vw * 126 / 375);
+    font-size: calc(100vw * 35 / 375);
+    line-height: 1.5;
+    transform: matrix(1, 0, -0.26, 0.97, 0, 0);
+    text-shadow: calc(100vw * 4 / 375) calc(100vw * 4 / 375) calc(100vw * 4 / 375) rgba(0, 0, 0, 0.25);
+  }
+
+  .fv-heading-small {
+    font-size: calc(100vw * 20 / 375);
+  }
+
+  .fv-heading-line02 {
+    left: auto;
+    right: calc(100vw * 18 / 375);
+    top: calc(100vw * 170 / 375);
+    font-size: calc(100vw * 25 / 375);
+    line-height: 1.5;
+    transform: matrix(1, 0, -0.26, 0.97, 0, 0);
+    text-align: right;
+    text-shadow: calc(100vw * 4 / 375) calc(100vw * 4 / 375) calc(100vw * 4 / 375) rgba(0, 0, 0, 0.25);
+  }
+
+  .fv-heading-large {
+    font-size: calc(100vw * 35 / 375);
+  }
+
+  .fv-heading-small2 {
+    font-size: calc(100vw * 25 / 375);
+  }
+
+  .fv-description {
+    left: calc(100vw * 18 / 375);
+    top: calc(100vw * 284 / 375);
+    width: calc(100vw * 343 / 375);
+    min-height: calc(100vw * 62 / 375);
+    display: inline-block;
+    text-align: left;
+    font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-size: calc(100vw * 14 / 375);
+    line-height: 1.5;
+    letter-spacing: -0.1em;
+    color: #fff;
+    text-shadow: calc(100vw * 4 / 375) calc(100vw * 4 / 375) calc(100vw * 4 / 375) rgba(0, 0, 0, 0.25);
+  }
+
+  .fv-cta {
+    left: calc(50% - calc(100vw * 170 / 375));
+    top: calc(100vw * 455 / 375);
+    width: calc(100vw * 340 / 375);
+    height: calc(100vw * 80 / 375);
+    font-size: calc(100vw * 20 / 375);
+    box-shadow: 0 calc(100vw * 4 / 375) calc(100vw * 4 / 375) rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.15em;
+  }
+
+  /* =========================================================
+     Worries
+     ========================================================= */
+  .worries-container {
+    margin-top: 0;
+    padding-bottom: calc(100vw * 24 / 375);
+  }
+
+  .worries-content {
+    padding-top: calc(100vw * 25 / 375);
+    padding-left: calc(100vw * 18 / 375);
+    padding-right: calc(100vw * 18 / 375);
+  }
+
+  .worries-title {
+    gap: calc(100vw * 3 / 375);
+    min-height: calc(100vw * 68 / 375);
+    margin-bottom: calc(100vw * 25 / 375);
+  }
+
+  .worries-title-text {
+    font-size: calc(100vw * 18 / 375);
+    line-height: 1.5;
+  }
+
+  .worries-title-em {
+    font-size: calc(100vw * 23 / 375);
+    line-height: 1.5;
+  }
+
+  .worries-title-em--first {
+    transform: translateY(calc(100vw * -5 / 375));
+  }
+
+  .worries-title-em--last {
+    transform: translateY(calc(100vw * 3 / 375));
+  }
+
+  .worries-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .worries-list--top {
+    flex-wrap: nowrap;
+    gap: calc(100vw * 8.45 / 375);
+    width: calc(100vw * 339 / 375);
+    margin: calc(100vw * 10 / 375) auto 0;
+  }
+
+  .worries-list--bottom {
+    flex-wrap: nowrap;
+    gap: calc(100vw * 31.15 / 375);
+    width: calc(100vw * 340 / 375);
+    margin: calc(100vw * 10 / 375) auto 0;
+    padding-bottom: calc(100vw * 10 / 375);
+  }
+
+  .worries-item {
+    width: calc(100vw * 107.7 / 375);
+    height: calc(100vw * 67.4 / 375);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .worries-list--bottom .worries-item {
+    width: calc(100vw * 111.4 / 375);
+    height: calc(100vw * 71.5 / 375);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .worries-item-bg {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .worries-item-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(100vw * 7 / 375) calc(100vw * 18.69 / 375) calc(100vw * 11.09 / 375) calc(100vw * 20 / 375);
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #fff;
+    font-size: calc(100vw * 10 / 375);
+    line-height: 1.5;
+  }
+
+  .worries-footer {
+    margin-top: calc(100vw * 28 / 375);
+    text-align: center;
+  }
+
+  .worries-footer-head {
+    width: calc(100vw * 339 / 375);
+    height: calc(100vw * 55 / 375);
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: calc(100vw * 13 / 375) calc(100vw * 4 / 375) calc(100vw * 12 / 375);
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: calc(100vw * 22 / 375);
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 0;
+  }
+
+  .worries-footer-text {
+    width: calc(100vw * 331 / 375);
+    min-height: calc(100vw * 69 / 375);
+    margin: calc(100vw * 16 / 375) auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #fff;
+    font-size: calc(100vw * 15 / 375);
+    line-height: 1.5;
+  }
+
+  /* =========================================================
+     CTA
+     ========================================================= */
+  .cta-container {
+    height: auto;
+    margin-top: calc(100vw * 30 / 375);
+    padding: 0 calc(100vw * 18 / 375);
+  }
+
+  .cta-content {
+    width: calc(100vw * 340 / 375);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: calc(100vw * 16 / 375);
+  }
+
+  .cta-lead {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    min-height: calc(100vw * 252 / 375);
+    padding-left: calc(100vw * 38 / 375);
+    padding-top: calc(100vw * 35 / 375);
+  }
+
+  .cta-badge {
+    position: absolute;
+    left: calc(100vw * -6 / 375);
+    top: calc(100vw * 22 / 375);
+    width: calc(100vw * 48 / 375);
+    height: calc(100vw * 48 / 375);
+    font-size: calc(100vw * 10 / 375);
+    transform: rotate(-14.3deg);
+  }
+
+  .cta-mini {
+    position: relative;
+    left: 0;
+    top: 0;
+    font-size: calc(100vw * 18 / 375);
+    padding-left: calc(100vw * 10 / 375);
+  }
+
+  .cta-title {
+    position: relative;
+    left: 0;
+    top: 0;
+    font-size: calc(100vw * 28 / 375);
+    margin-bottom: calc(100vw * 22 / 375);
+    padding-left: calc(100vw * 10 / 375);
+  }
+
+  .cta-list {
+    position: relative;
+    left: calc(100vw * -38 / 375);
+    top: 0;
+    width: calc(100vw * 340 / 375);
+    padding-top: calc(100vw * 15 / 375);
+    margin-top: 0;
+    border-top: 1px solid #000000;
+  }
+
+  .cta-list li {
+    padding-left: calc(100vw * 36 / 375);
+    font-size: calc(100vw * 14 / 375);
+    line-height: calc(100vw * 22 / 375);
+  }
+
+  .cta-list li::before {
+    left: calc(100vw * 4 / 375);
+    top: calc(100vw * 2 / 375);
+    width: calc(100vw * 12 / 375);
+    height: calc(100vw * 7 / 375);
+    border-left: calc(100vw * 3 / 375) solid #D0600C;
+    border-bottom: calc(100vw * 3 / 375) solid #D0600C;
+  }
+
+  .cta-list li:first-child {
+    padding-left: calc(100vw * 36 / 375);
+  }
+
+  .cta-list li:first-child::before {
+    left: calc(100vw * 4 / 375);
+  }
+
+  .cta-list li + li {
+    margin-top: calc(100vw * 20 / 375);
+  }
+
+  .cta-card {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: calc(100vw * 342.48 / 375);
+    margin: 0 auto;
+    height: calc(100vw * 149 / 375);
+    box-shadow: 0 calc(100vw * 4 / 375) calc(100vw * 4 / 375) rgba(0, 0, 0, 0.25);
+  }
+
+  .cta-card-phone {
+    left: calc(100vw * 11 / 375);
+    top: calc(100vw * 49 / 375);
+    width: calc(100vw * 32 / 375);
+    height: calc(100vw * 51 / 375);
+  }
+
+  .cta-card-dots {
+    left: calc(100vw * 69 / 375);
+    top: calc(100vw * 35 / 375);
+    width: calc(100vw * 61 / 375);
+    height: calc(100vw * 14 / 375);
+    font-size: calc(100vw * 20 / 375);
+  }
+
+  .cta-card-copy {
+    left: calc(100vw * 69 / 375);
+    top: calc(100vw * 44 / 375);
+    font-size: calc(100vw * 20 / 375);
+  }
+
+  .cta-card-title {
+    left: calc(100vw * 69 / 375);
+    top: calc(100vw * 69 / 375);
+    max-width: calc(100vw * 263 / 375);
+    font-size: calc(100vw * 25 / 375);
+  }
+
+  .cta-card-title-small {
+    font-size: calc(100vw * 18 / 375);
+  }
+
+  .cta-card-arrow {
+    display: none !important;
+  }
+
+
+  /* =========================================================
+     Reason
+     ========================================================= */
+  .reason-container {
+    width: 100%;
+    padding-bottom: calc(100vw * 30 / 375);
+  }
+
+  .reason-content {
+    position: relative;
+    width: 100%;
+    height: calc(100vw * 780 / 375);
+    overflow: hidden;
+    text-align: center;
+    font-size: calc(100vw * 18 / 375);
+    color: #000;
+    font-family: "Noto Sans JP", sans-serif;
+    padding: 0;
+  }
+
+  .reason-content .section-title--black {
+    width: calc(100vw * 311 / 375);
+    min-height: calc(100vw * 27 / 375);
+    font-size: calc(100vw * 18 / 375);
+    line-height: 1.5;
+    position: absolute;
+    top: calc(100vw * 15 / 375);
+    left: calc(100vw * 34 / 375);
+    display: inline-block;
+    font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    color: #000;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 0;
+  }
+
+  .reason-content .section-subtitle {
+    width: calc(100vw * 340 / 375);
+    min-height: calc(100vw * 37 / 375);
+    font-size: calc(100vw * 15 / 375);
+    line-height: 1.5;
+    position: absolute;
+    top: calc(100vw * 52 / 375);
+    left: calc(100vw * 18 / 375);
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #000;
+    letter-spacing: 0;
+  }
+
+  .reason-heading-icon {
+    position: absolute;
+    top: calc(100vw * -25 / 375);
+    left: calc(100vw * 358 / 375);
+    width: calc(100vw * 99 / 375);
+    height: calc(100vw * 74 / 375);
+  }
+
+  .reason-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(100vw * 32 / 375) calc(100vw * 2 / 375);
+    width: calc(100vw * 340 / 375);
+    position: absolute;
+    top: calc(100vw * 110 / 375);
+    left: calc(100vw * 18 / 375);
+    margin: 0;
+  }
+
+  .reason-item {
+    width: calc(100vw * 169 / 375);
+    margin-bottom: 0;
+    height: calc(100vw * 320 / 375);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-size: calc(100vw * 18 / 375);
+    color: #000;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+
+  .reason-icon-circle {
+    position: absolute;
+    top: calc(100vw * 20 / 375);
+    left: calc(100vw * 39 / 375);
+    width: calc(100vw * 92 / 375);
+    height: calc(100vw * 92 / 375);
+    margin: 0;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reason-icon-circle img {
+    width: calc(100vw * 39 / 375);
+    height: calc(100vw * 40 / 375);
+  }
+
+  .reason-item h3 {
+    position: absolute;
+    top: calc(100vw * 122 / 375);
+    left: 0;
+    width: 100%;
+    height: calc(100vw * 54 / 375);
+    padding: 0 calc(100vw * 14 / 375);
+    box-sizing: border-box;
+    margin: 0;
+    font-size: calc(100vw * 18 / 375);
+    line-height: 1.5;
+    font-weight: 700;
+    word-break: keep-all;
+    line-break: strict;
+  }
+
+  .reason-item p {
+    position: absolute;
+    top: calc(100vw * 186 / 375);
+    left: 0;
+    width: calc(100vw * 169 / 375);
+    height: calc(100vw * 120 / 375);
+    margin-bottom: calc(100vw * 19 / 375);
+    margin: 0;
+    font-size: calc(100vw * 13 / 375);
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* =========================================================
+     Advisor
+     ========================================================= */
+  .advisor-container {
+    padding-bottom: calc(100vw * 40 / 375);
+  }
+
+  .advisor-bg-line {
+    height: calc(100vw * 69 / 375);
+  }
+
+  .advisor-content {
+    padding-top: calc(100vw * 30 / 375);
+    padding-left: calc(100vw * 18 / 375);
+    padding-right: calc(100vw * 18 / 375);
+  }
+
+  .advisor-title {
+    position: relative;
+    width: 100%;
+    height: calc(100vw * 53 / 375);
+    font-family: "Noto Serif JP", serif;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .advisor-title > span:first-child {
+    position: absolute;
+    top: calc(100vw * -3 / 375);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: calc(100vw * 18 / 375);
+    line-height: 1.5;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .advisor-title-line--boxes {
+    position: absolute;
+    top: calc(100vw * 24 / 375);
+    left: calc(100vw * 111 / 375);
+    display: flex;
+    gap: calc(100vw * 1.67 / 375);
+    margin: 0 !important;
+  }
+
+  .advisor-title-box {
+    width: calc(100vw * 29 / 375);
+    height: calc(100vw * 29 / 375);
+    font-size: calc(100vw * 20 / 375);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.5;
+    padding-bottom: 0;
+    letter-spacing: 0.15em;
+    padding-left: calc(100vw * 4.46 / 375);
+    box-sizing: border-box;
+    font-family: "Noto Serif JP", serif;
+  }
+
+  .advisor-title > span:last-child {
+    position: absolute;
+    top: calc(100vw * 26 / 375);
+    left: calc(100vw * 175 / 375);
+    font-size: calc(100vw * 18 / 375);
+    line-height: 1.5;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .advisor-list {
+    flex-direction: column;
+    width: calc(100vw * 340 / 375);
+    margin: calc(100vw * 35 / 375) auto 0;
+    gap: calc(100vw * 35 / 375);
+  }
+
+  .advisor-item {
+    width: 100%;
+  }
+
+  .advisor-item-image {
+    width: 100%;
+    height: calc(100vw * 225 / 375);
+  }
+
+  .advisor-item h3 {
+    margin-top: calc(100vw * 16 / 375);
+    font-size: calc(100vw * 20 / 375);
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .advisor-item p {
+    margin-top: calc(100vw * 12 / 375);
+    font-size: calc(100vw * 18 / 375);
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  /* =========================================================
+     Voice
+     ========================================================= */
+  .voice-content {
+    padding-top: calc(100vw * 25 / 375);
+    padding-left: calc(100vw * 18 / 375);
+    padding-right: calc(100vw * 18 / 375);
+  }
+
+  .voice-content .section-title {
+    margin-top: calc(100vw * 4 / 375);
+    font-size: calc(100vw * 20 / 375);
+  }
+
+  .voice-grid {
+    position: static;
+    width: calc(100vw * 340 / 375);
+    height: auto;
+    margin: calc(100vw * 25 / 375) auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: calc(100vw * 18 / 375);
+  }
+
+  .voice-item {
+    position: static;
+    width: 100%;
+  }
+
+  .voice-box {
+    width: calc(100vw * 340 / 375);
+    min-height: calc(100vw * 250 / 375);
+    margin-left: 0;
+    margin-right: 0;
+    padding: calc(100vw * 20 / 375) 0;
+    padding-bottom: calc(100vw * 30 / 375);
+    box-shadow: inset 0 0 calc(100vw * 20 / 375) calc(100vw * 3 / 375) rgba(0, 0, 0, 0.25);
+    border-radius: calc(100vw * 30 / 375) calc(100vw * 30 / 375) calc(100vw * 30 / 375) 0;
+  }
+
+  .voice-box h3 {
+    font-size: calc(100vw * 18 / 375);
+    padding: 0 calc(100vw * 20 / 375);
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .voice-box p {
+    margin-top: calc(100vw * 10 / 375);
+    font-size: calc(100vw * 14 / 375);
+    line-height: calc(100vw * 20 / 375);
+    padding: 0 calc(100vw * 20 / 375);
+    letter-spacing: -0.05em;
+  }
+
+  .voice-person {
+    margin-top: calc(100vw * 8 / 375);
+    padding-left: calc(100vw * 20 / 375);
+  }
+
+  .voice-person-img-wrap {
+    width: calc(100vw * 35 / 375);
+    height: calc(100vw * 35 / 375);
+  }
+
+  .voice-person-img-wrap::before {
+    margin-top: 0;
+    width: calc(100vw * 35 / 375);
+    height: calc(100vw * 35 / 375);
+  }
+
+  .voice-person img {
+    width: calc(100vw * 33 / 375);
+    height: calc(100vw * 33 / 375);
+  }
+
+  .voice-person span {
+    margin-left: calc(100vw * 4 / 375);
+    font-size: calc(100vw * 14 / 375);
+    line-height: calc(100vw * 20 / 375);
+  }
+
+  /* =========================================================
+     Service
+     ========================================================= */
+  .service-content {
+    padding-top: calc(100vw * 30 / 375);
+    padding-left: calc(100vw * 18 / 375);
+    padding-right: calc(100vw * 18 / 375);
+  }
+
+  .service-content .section-title {
+    margin-top: calc(100vw * 4 / 375);
+    font-size: calc(100vw * 20 / 375);
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    margin-top: calc(100vw * 25 / 375);
+  }
+
+  .service-item {
+    height: calc(100vw * 230 / 375);
+  }
+
+  .service-item-text {
+    width: calc(100vw * 339 / 375);
+  }
+
+  .service-item-text h3 {
+    font-size: calc(100vw * 18 / 375);
+  }
+
+  .service-item-text p {
+    margin-top: calc(100vw * 15 / 375);
+    font-size: calc(100vw * 14 / 375);
+    line-height: calc(100vw * 30 / 375);
+  }
+
+  /* =========================================================
+     Profile
+     ========================================================= */
+  .profile-content {
+    padding-top: calc(100vw * 25 / 375);
+    padding-left: calc(100vw * 18 / 375);
+    padding-right: calc(100vw * 18 / 375);
+  }
+
+  .profile-content .section-title {
+    margin-top: calc(100vw * 4 / 375);
+    font-size: calc(100vw * 20 / 375);
+  }
+
+  .profile-main {
+    flex-direction: column;
+    width: calc(100vw * 339 / 375);
+    margin: calc(100vw * 20 / 375) auto 0;
+    gap: calc(100vw * 15 / 375);
+  }
+
+  .profile-image {
+    width: 100%;
+    height: calc(100vw * 247 / 375);
+  }
+
+  .profile-image img {
+    width: 100%;
+    height: calc(100vw * 247 / 375);
+  }
+
+  .profile-text {
+    width: 100%;
+  }
+
+  .profile-en {
+    font-size: calc(100vw * 10 / 375);
+    letter-spacing: 0.25em;
+  }
+
+  .profile-name-row {
+    align-items: flex-start;
+    gap: calc(100vw * 2 / 375);
+  }
+
+  .profile-text h3 {
+    font-size: calc(100vw * 25 / 375);
+    letter-spacing: 0.1em;
+  }
+
+  .profile-meta {
+    font-size: calc(100vw * 15 / 375);
+    line-height: calc(100vw * 20 / 375);
+    padding-bottom: 0;
+    padding-left: calc(100vw * 25 / 375);
+    margin-bottom: calc(100vw * 10 / 375);
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .profile-description {
+    margin-top: calc(100vw * 35 / 375);
+    margin-bottom: calc(100vw * 35 / 375);
+    font-size: calc(100vw * 16 / 375);
+    line-height: calc(100vw * 25 / 375);
+    letter-spacing: -0.05em;
+  }
+
+  .profile-catch {
+    font-size: calc(100vw * 23 / 375);
+    margin-bottom: calc(100vw * 49 / 375);
+  }
+
+  /* =========================================================
+     Q&A
+     ========================================================= */
+  .qa-container {
+    padding-bottom: calc(100vw * 20 / 375);
+  }
+
+  .qa-content {
+    padding-top: 0;
+    padding-left: calc(100vw * 18 / 375);
+    padding-right: calc(100vw * 18 / 375);
+  }
+
+  .qa-content .section-title {
+    margin-top: calc(100vw * 4 / 375);
+    font-size: calc(100vw * 20 / 375);
+  }
+
+  .qa-content .section-kicker {
+    font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-size: calc(100vw * 15 / 375);
+    line-height: calc(100vw * 22 / 375);
+    margin-top: calc(100vw * 17 / 375);
+    text-align: center;
+  }
+
+  .qa-list {
+    width: calc(100vw * 339 / 375);
+    margin: calc(100vw * 20 / 375) auto 0;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: calc(100vw * 23 / 375);
+  }
+
+  .qa-item {
+    width: 100%;
+  }
+
+  .qa-question {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: auto;
+    min-height: calc(100vw * 90 / 375);
+    padding-top: calc(100vw * 18 / 375);
+    padding-right: calc(100vw * 30 / 375);
+    padding-bottom: calc(100vw * 18 / 375);
+    padding-left: calc(100vw * 5 / 375);
+  }
+  
+  .qa-question span {
+    flex: 0 0 auto;
+    font-size: calc(100vw * 20 / 375);
+    font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  }
+  
+  .qa-question p {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+    margin-left: calc(100vw * 5 / 375);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: calc(100vw * 18 / 375);
+    line-height: 1.5;
+    letter-spacing: -0.05em;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 700;
+    text-align: left;
+    display: block;
+    word-break: normal;
+    overflow-wrap: normal;
+    line-break: strict;
+    /* word-break: normal; */
+    /* overflow-wrap: break-word; */
+  }
+  
+  .qa-question i {
+    position: absolute;
+    right: calc(100vw * 5 / 375);
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0;
+    width: calc(100vw * 30 / 375);
+    height: calc(100vw * 30 / 375);
+  }
+
+  .qa-arrow {
+    height: calc(100vw * 12 / 375);
+  }
+
+  .qa-answer p {
+    padding: calc(100vw * 15 / 375);
+    font-size: calc(100vw * 16 / 375);
+    line-height: calc(100vw * 27 / 375);
+    width: 100%;
+  }
+
+  /* =========================================================
+     Bottom
+     ========================================================= */
+  .bottom-hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bottom-copy {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: calc(100vw * 30 / 375) calc(100vw * 18 / 375) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-copy h2 {
+    font-size: calc(100vw * 20 / 375);
+    width: calc(100vw * 322 / 375);
+    transform: matrix(1, 0, -0.26, 0.97, 0, 0);
+    letter-spacing: 0.15em;
+    line-height: 1.2;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  .bottom-copy-large {
+    font-size: calc(100vw * 35 / 375);
+  }
+
+  .bottom-copy p {
+    margin-top: calc(100vw * 13 / 375);
+    font-size: calc(100vw * 15 / 375);
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .bottom-images {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    height: calc(100vw * 237 / 375);
+    margin-top: calc(100vw * 20 / 375);
+  }
+
+  .bottom-image-phone {
+    left: calc(100vw * 18 / 375);
+    top: calc(100vw * 58 / 375);
+    width: calc(100vw * 157 / 375);
+    height: calc(100vw * 179 / 375);
+    z-index: 1;
+  }
+
+  .bottom-image-city {
+    right: 0;
+    left: auto;
+    top: 0;
+    width: calc(100vw * 257 / 375);
+    height: calc(100vw * 200 / 375);
+  }
+
+  .bottom-cta-area {
+    position: relative;
+    width: calc(100vw * 340 / 375);
+    max-width: 100%;
+    margin: calc(100vw * 30 / 375) auto 0;
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: calc(100vw * 16 / 375);
+  }
+
+  .bottom-cta-area .cta-lead {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    min-height: calc(100vw * 252 / 375);
+    padding-left: calc(100vw * 38 / 375);
+    padding-top: calc(100vw * 35 / 375);
+  }
+
+  .bottom-cta-area .cta-card {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: calc(100vw * 342.48 / 375);
+    margin: 0 auto;
+  }
+
+  .bottom-copy-right {
+    margin-top: calc(100vw * 25 / 375);
+    padding-right: calc(100vw * 18 / 375);
+    padding-bottom: calc(100vw * 25 / 375);
+    font-size: calc(100vw * 10 / 375);
+    line-height: 1.5;
+  }
+
 }
