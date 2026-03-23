@@ -957,6 +957,7 @@ img {
   position: relative;
   width: 100%;
   height: calc(100vw * 300 / 1440);
+  margin-bottom: calc(100vw * 5 / 1440);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -2130,7 +2131,7 @@ img {
      Profile
      ========================================================= */
   .profile-content {
-    padding-top: calc(100vw * 25 / 375);
+    padding-top: calc(100vw * 45 / 375);
     padding-left: calc(100vw * 18 / 375);
     padding-right: calc(100vw * 18 / 375);
   }
