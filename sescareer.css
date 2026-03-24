@@ -1605,7 +1605,6 @@ img {
     height: calc(100vw * 55 / 375);
     background-color: #fff;
     display: flex;
-    align-items: flex-start;
     justify-content: flex-start;
     margin: 0 auto;
     padding: calc(100vw * 13 / 375) calc(100vw * 4 / 375) calc(100vw * 12 / 375);
