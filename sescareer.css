@@ -956,12 +956,16 @@ img {
 .service-item {
   position: relative;
   width: 100%;
-  height: calc(100vw * 300 / 1440);
-  margin-bottom: calc(100vw * 5 / 1440);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .service-item {
+    height: calc(100vw * 300 / 1440);
+  }
 }
 
 .service-item img {
@@ -2110,6 +2114,7 @@ img {
 
   .service-item {
     height: calc(100vw * 230 / 375);
+    margin-bottom: calc(100vw * 5 / 375);
   }
 
   .service-item-text {
