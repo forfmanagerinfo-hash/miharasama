@@ -473,7 +473,7 @@ img {
   border-top: calc(100vw * 1 / 1440) solid #000000;
 }
 
-.cta-list li {
+.cta-list-item {
   position: relative;
   padding-left: calc(100vw * 106 / 1440);
   font-family: "Noto Sans JP", sans-serif;
@@ -482,11 +482,7 @@ img {
   font-weight: 700;
 }
 
-.cta-list li:first-child {
-  padding-left: calc(100vw * 106 / 1440);
-}
-
-.cta-list li::before {
+.cta-list-item::before {
   content: "";
   position: absolute;
   left: calc(100vw * 66 / 1440);
@@ -498,11 +494,7 @@ img {
   transform: rotate(-45deg);
 }
 
-.cta-list li:first-child::before {
-  left: calc(100vw * 66 / 1440);
-}
-
-.cta-list li + li {
+.cta-list-item + .cta-list-item {
   margin-top: calc(100vw * 25 / 1440);
 }
 
@@ -964,11 +956,16 @@ img {
 .service-item {
   position: relative;
   width: 100%;
-  height: calc(100vw * 300 / 1440);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .service-item {
+    height: calc(100vw * 300 / 1440);
+  }
 }
 
 .service-item img {
@@ -1612,7 +1609,6 @@ img {
     height: calc(100vw * 55 / 375);
     background-color: #fff;
     display: flex;
-    align-items: flex-start;
     justify-content: flex-start;
     margin: 0 auto;
     padding: calc(100vw * 13 / 375) calc(100vw * 4 / 375) calc(100vw * 12 / 375);
@@ -1673,8 +1669,8 @@ img {
 
   .cta-badge {
     position: absolute;
-    left: calc(100vw * -6 / 375);
-    top: calc(100vw * 22 / 375);
+    left: calc(100vw * 7 / 375);
+    top: calc(100vw * 25 / 375);
     width: calc(100vw * 48 / 375);
     height: calc(100vw * 48 / 375);
     font-size: calc(100vw * 10 / 375);
@@ -1708,30 +1704,22 @@ img {
     border-top: 1px solid #000000;
   }
 
-  .cta-list li {
+  .cta-list-item {
     padding-left: calc(100vw * 36 / 375);
-    font-size: calc(100vw * 14 / 375);
-    line-height: calc(100vw * 22 / 375);
+    font-size: calc(100vw * 13 / 375);
+    line-height: 1.5;
   }
 
-  .cta-list li::before {
-    left: calc(100vw * 4 / 375);
-    top: calc(100vw * 2 / 375);
+  .cta-list-item::before {
+    left: calc(100vw * 8 / 375);
+    top: calc(100vw * 4 / 375);
     width: calc(100vw * 12 / 375);
     height: calc(100vw * 7 / 375);
     border-left: calc(100vw * 3 / 375) solid #D0600C;
     border-bottom: calc(100vw * 3 / 375) solid #D0600C;
   }
 
-  .cta-list li:first-child {
-    padding-left: calc(100vw * 36 / 375);
-  }
-
-  .cta-list li:first-child::before {
-    left: calc(100vw * 4 / 375);
-  }
-
-  .cta-list li + li {
+  .cta-list-item + .cta-list-item {
     margin-top: calc(100vw * 20 / 375);
   }
 
@@ -1787,7 +1775,8 @@ img {
      ========================================================= */
   .reason-container {
     width: 100%;
-    padding-bottom: calc(100vw * 30 / 375);
+    /* padding-bottom: calc(100vw * 30 / 375); */
+    margin-top: calc(100vw * 30 / 375);
   }
 
   .reason-content {
@@ -1847,7 +1836,7 @@ img {
   .reason-list {
     display: flex;
     flex-wrap: wrap;
-    gap: calc(100vw * 32 / 375) calc(100vw * 2 / 375);
+    /* gap: calc(100vw * 32 / 375) calc(100vw * 2 / 375); */
     width: calc(100vw * 340 / 375);
     position: absolute;
     top: calc(100vw * 110 / 375);
@@ -1995,7 +1984,7 @@ img {
   .advisor-list {
     flex-direction: column;
     width: calc(100vw * 340 / 375);
-    margin: calc(100vw * 35 / 375) auto 0;
+    margin: calc(100vw * 20 / 375) auto 0;
     gap: calc(100vw * 35 / 375);
   }
 
@@ -2032,7 +2021,7 @@ img {
   }
 
   .voice-content .section-title {
-    margin-top: calc(100vw * 4 / 375);
+    margin-top: calc(100vw * -3 / 375);
     font-size: calc(100vw * 20 / 375);
   }
 
@@ -2108,13 +2097,13 @@ img {
      Service
      ========================================================= */
   .service-content {
-    padding-top: calc(100vw * 30 / 375);
+    padding-top: calc(100vw * 57 / 375);
     padding-left: calc(100vw * 18 / 375);
     padding-right: calc(100vw * 18 / 375);
   }
 
   .service-content .section-title {
-    margin-top: calc(100vw * 4 / 375);
+    margin-top: calc(100vw * -3 / 375);
     font-size: calc(100vw * 20 / 375);
   }
 
@@ -2125,6 +2114,7 @@ img {
 
   .service-item {
     height: calc(100vw * 230 / 375);
+    margin-bottom: calc(100vw * 5 / 375);
   }
 
   .service-item-text {
@@ -2145,13 +2135,13 @@ img {
      Profile
      ========================================================= */
   .profile-content {
-    padding-top: calc(100vw * 25 / 375);
+    padding-top: calc(100vw * 45 / 375);
     padding-left: calc(100vw * 18 / 375);
     padding-right: calc(100vw * 18 / 375);
   }
 
   .profile-content .section-title {
-    margin-top: calc(100vw * 4 / 375);
+    margin-top: calc(100vw * -3 / 375);
     font-size: calc(100vw * 20 / 375);
   }
 
@@ -2222,7 +2212,6 @@ img {
   }
 
   .qa-content {
-    padding-top: 0;
     padding-left: calc(100vw * 18 / 375);
     padding-right: calc(100vw * 18 / 375);
   }
@@ -2287,8 +2276,6 @@ img {
     word-break: normal;
     overflow-wrap: normal;
     line-break: strict;
-    /* word-break: normal; */
-    /* overflow-wrap: break-word; */
   }
   
   .qa-question i {
